@@ -1,10 +1,10 @@
 "use client";
 
-import { ReactNode, ButtonHTMLAttributes } from "react";
+import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
     variant?: "primary" | "secondary" | "ghost" | "outline";
     size?: "sm" | "md" | "lg";
     children: ReactNode;
@@ -14,6 +14,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     fullWidth?: boolean;
     as?: "button" | "a";
     href?: string;
+    className?: string;
+    disabled?: boolean;
+    type?: "button" | "submit" | "reset";
+    onClick?: () => void;
 }
 
 export default function Button({
@@ -28,7 +32,8 @@ export default function Button({
     disabled,
     as = "button",
     href,
-    ...props
+    type = "button",
+    onClick,
 }: ButtonProps) {
     const baseStyles = `
     inline-flex items-center justify-center gap-2
@@ -131,11 +136,12 @@ export default function Button({
 
     return (
         <motion.button
+            type={type}
             className={buttonClasses}
             disabled={disabled || isLoading}
-            whileHover={!disabled && !isLoading ? { scale: 1.02 } : {}}
-            whileTap={!disabled && !isLoading ? { scale: 0.98 } : {}}
-            {...props}
+            onClick={onClick}
+            whileHover={!disabled && !isLoading ? { scale: 1.02 } : undefined}
+            whileTap={!disabled && !isLoading ? { scale: 0.98 } : undefined}
         >
             {content}
         </motion.button>
