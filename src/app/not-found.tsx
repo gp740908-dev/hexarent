@@ -36,13 +36,13 @@ export default function NotFound() {
                             <Home className="w-5 h-5" />
                             Go Home
                         </Link>
-                        <button
-                            onClick={() => window.history.back()}
+                        <Link
+                            href="/equipment"
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-white/20 text-white font-bold hover:border-white/40 transition-colors"
                         >
                             <ArrowLeft className="w-5 h-5" />
-                            Go Back
-                        </button>
+                            Browse Equipment
+                        </Link>
                     </div>
 
                     {/* Quick Links */}
