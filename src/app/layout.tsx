@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { PrismicProvider } from "@/components/prismic";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -81,9 +82,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <PrismicProvider>
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </PrismicProvider>
       </body>
     </html>
   );

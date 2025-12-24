@@ -1,0 +1,283 @@
+{
+    "id": "equipment",
+    "label": "Equipment",
+    "format": "page",
+    "repeatable": true,
+    "status": true,
+    "json": {
+        "Main": {
+            "uid": {
+                "type": "UID",
+                "config": {
+                    "label": "URL Slug",
+                    "placeholder": "caterpillar-320-excavator"
+                }
+            },
+            "equipment_name": {
+                "type": "Text",
+                "config": {
+                    "label": "Equipment Name",
+                    "placeholder": "CAT 320 Excavator"
+                }
+            },
+            "category": {
+                "type": "Select",
+                "config": {
+                    "label": "Category",
+                    "placeholder": "Select a category",
+                    "options": [
+                        "excavators",
+                        "cranes",
+                        "bulldozers",
+                        "loaders",
+                        "dump-trucks",
+                        "compactors",
+                        "forklifts",
+                        "generators"
+                    ]
+                }
+            },
+            "brand": {
+                "type": "Text",
+                "config": {
+                    "label": "Brand",
+                    "placeholder": "Caterpillar"
+                }
+            },
+            "model": {
+                "type": "Text",
+                "config": {
+                    "label": "Model",
+                    "placeholder": "320"
+                }
+            },
+            "year_manufactured": {
+                "type": "Number",
+                "config": {
+                    "label": "Year Manufactured",
+                    "placeholder": "2023"
+                }
+            },
+            "hero_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Hero Image",
+                    "constraint": {
+                        "width": 1200,
+                        "height": 800
+                    },
+                    "thumbnails": [
+                        {
+                            "name": "thumbnail",
+                            "width": 400,
+                            "height": 300
+                        },
+                        {
+                            "name": "card",
+                            "width": 600,
+                            "height": 450
+                        }
+                    ]
+                }
+            },
+            "image_gallery": {
+                "type": "Group",
+                "config": {
+                    "label": "Image Gallery",
+                    "fields": {
+                        "image": {
+                            "type": "Image",
+                            "config": {
+                                "label": "Gallery Image"
+                            }
+                        },
+                        "caption": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Caption"
+                            }
+                        }
+                    }
+                }
+            },
+            "short_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Short Description",
+                    "placeholder": "Brief description for listing pages"
+                }
+            },
+            "full_description": {
+                "type": "RichText",
+                "config": {
+                    "label": "Full Description",
+                    "placeholder": "Detailed equipment description",
+                    "multi": "paragraph,heading3,heading4,strong,em,list-item"
+                }
+            }
+        },
+        "Specifications": {
+            "weight": {
+                "type": "Number",
+                "config": {
+                    "label": "Operating Weight (kg)",
+                    "placeholder": "20000"
+                }
+            },
+            "capacity": {
+                "type": "Number",
+                "config": {
+                    "label": "Capacity (tons)",
+                    "placeholder": "1.5"
+                }
+            },
+            "engine_power": {
+                "type": "Text",
+                "config": {
+                    "label": "Engine Power",
+                    "placeholder": "121 kW"
+                }
+            },
+            "fuel_type": {
+                "type": "Select",
+                "config": {
+                    "label": "Fuel Type",
+                    "options": [
+                        "Diesel",
+                        "Electric",
+                        "Hybrid",
+                        "LPG"
+                    ]
+                }
+            },
+            "fuel_consumption": {
+                "type": "Text",
+                "config": {
+                    "label": "Fuel Consumption",
+                    "placeholder": "12 L/hr"
+                }
+            },
+            "dimensions": {
+                "type": "Text",
+                "config": {
+                    "label": "Dimensions (L x W x H)",
+                    "placeholder": "9.5m x 3.2m x 3.0m"
+                }
+            },
+            "specifications": {
+                "type": "Group",
+                "config": {
+                    "label": "Additional Specifications",
+                    "fields": {
+                        "spec_name": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Specification Name",
+                                "placeholder": "Max Dig Depth"
+                            }
+                        },
+                        "spec_value": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Value",
+                                "placeholder": "6.7m"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Pricing": {
+            "daily_rate": {
+                "type": "Number",
+                "config": {
+                    "label": "Daily Rate ($)",
+                    "placeholder": "450"
+                }
+            },
+            "weekly_rate": {
+                "type": "Number",
+                "config": {
+                    "label": "Weekly Rate ($)",
+                    "placeholder": "2500"
+                }
+            },
+            "monthly_rate": {
+                "type": "Number",
+                "config": {
+                    "label": "Monthly Rate ($)",
+                    "placeholder": "8000"
+                }
+            },
+            "availability_status": {
+                "type": "Select",
+                "config": {
+                    "label": "Availability Status",
+                    "options": [
+                        "available",
+                        "limited",
+                        "unavailable"
+                    ],
+                    "default_value": "available"
+                }
+            }
+        },
+        "Features": {
+            "features": {
+                "type": "Group",
+                "config": {
+                    "label": "Features",
+                    "fields": {
+                        "feature": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Feature",
+                                "placeholder": "GPS Tracking"
+                            }
+                        }
+                    }
+                }
+            },
+            "related_equipment": {
+                "type": "Group",
+                "config": {
+                    "label": "Related Equipment",
+                    "fields": {
+                        "equipment": {
+                            "type": "Link",
+                            "config": {
+                                "label": "Related Equipment",
+                                "select": "document",
+                                "customtypes": [
+                                    "equipment"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SEO": {
+            "meta_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Title",
+                    "placeholder": "SEO title for this equipment"
+                }
+            },
+            "meta_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Description",
+                    "placeholder": "SEO description for search engines"
+                }
+            },
+            "meta_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Social Share Image"
+                }
+            }
+        }
+    }
+}

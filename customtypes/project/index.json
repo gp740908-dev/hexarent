@@ -1,0 +1,261 @@
+{
+    "id": "project",
+    "label": "Project",
+    "format": "page",
+    "repeatable": true,
+    "status": true,
+    "json": {
+        "Main": {
+            "uid": {
+                "type": "UID",
+                "config": {
+                    "label": "URL Slug",
+                    "placeholder": "downtown-office-construction"
+                }
+            },
+            "project_name": {
+                "type": "Text",
+                "config": {
+                    "label": "Project Name",
+                    "placeholder": "Downtown Office Tower Construction"
+                }
+            },
+            "client_name": {
+                "type": "Text",
+                "config": {
+                    "label": "Client Name",
+                    "placeholder": "ABC Construction Corp"
+                }
+            },
+            "industry": {
+                "type": "Select",
+                "config": {
+                    "label": "Industry",
+                    "options": [
+                        "Commercial Construction",
+                        "Residential",
+                        "Infrastructure",
+                        "Industrial",
+                        "Mining",
+                        "Renewable Energy",
+                        "Marine",
+                        "Demolition"
+                    ]
+                }
+            },
+            "hero_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Hero Image",
+                    "constraint": {
+                        "width": 1600,
+                        "height": 900
+                    },
+                    "thumbnails": [
+                        {
+                            "name": "card",
+                            "width": 600,
+                            "height": 400
+                        }
+                    ]
+                }
+            },
+            "project_date": {
+                "type": "Date",
+                "config": {
+                    "label": "Project Date"
+                }
+            },
+            "duration": {
+                "type": "Text",
+                "config": {
+                    "label": "Project Duration",
+                    "placeholder": "6 months"
+                }
+            },
+            "location": {
+                "type": "Text",
+                "config": {
+                    "label": "Location",
+                    "placeholder": "Houston, TX"
+                }
+            }
+        },
+        "Content": {
+            "challenge": {
+                "type": "RichText",
+                "config": {
+                    "label": "Challenge",
+                    "placeholder": "What challenge did the client face?",
+                    "multi": "paragraph,heading3,strong,em,list-item"
+                }
+            },
+            "solution": {
+                "type": "RichText",
+                "config": {
+                    "label": "Solution",
+                    "placeholder": "How did HEXA Rent help solve it?",
+                    "multi": "paragraph,heading3,strong,em,list-item"
+                }
+            },
+            "results": {
+                "type": "RichText",
+                "config": {
+                    "label": "Results",
+                    "placeholder": "What were the outcomes?",
+                    "multi": "paragraph,heading3,strong,em,list-item"
+                }
+            }
+        },
+        "Media": {
+            "before_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Before Image"
+                }
+            },
+            "after_image": {
+                "type": "Image",
+                "config": {
+                    "label": "After Image"
+                }
+            },
+            "project_gallery": {
+                "type": "Group",
+                "config": {
+                    "label": "Project Gallery",
+                    "fields": {
+                        "image": {
+                            "type": "Image",
+                            "config": {
+                                "label": "Image"
+                            }
+                        },
+                        "caption": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Caption"
+                            }
+                        }
+                    }
+                }
+            },
+            "video_url": {
+                "type": "Embed",
+                "config": {
+                    "label": "Project Video (YouTube/Vimeo)",
+                    "placeholder": "https://youtube.com/watch?v=..."
+                }
+            }
+        },
+        "Equipment": {
+            "equipment_used": {
+                "type": "Group",
+                "config": {
+                    "label": "Equipment Used",
+                    "fields": {
+                        "equipment": {
+                            "type": "Link",
+                            "config": {
+                                "label": "Equipment",
+                                "select": "document",
+                                "customtypes": [
+                                    "equipment"
+                                ]
+                            }
+                        },
+                        "quantity": {
+                            "type": "Number",
+                            "config": {
+                                "label": "Quantity",
+                                "placeholder": "2"
+                            }
+                        },
+                        "duration": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Rental Duration",
+                                "placeholder": "3 months"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Testimonial": {
+            "testimonial_text": {
+                "type": "RichText",
+                "config": {
+                    "label": "Testimonial",
+                    "placeholder": "Client testimonial or quote",
+                    "single": "paragraph,strong,em"
+                }
+            },
+            "testimonial_author": {
+                "type": "Text",
+                "config": {
+                    "label": "Author Name",
+                    "placeholder": "John Smith"
+                }
+            },
+            "testimonial_role": {
+                "type": "Text",
+                "config": {
+                    "label": "Author Role",
+                    "placeholder": "Project Manager"
+                }
+            },
+            "testimonial_company": {
+                "type": "Text",
+                "config": {
+                    "label": "Company",
+                    "placeholder": "ABC Construction"
+                }
+            }
+        },
+        "Stats": {
+            "project_stats": {
+                "type": "Group",
+                "config": {
+                    "label": "Project Statistics",
+                    "fields": {
+                        "stat_label": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Stat Label",
+                                "placeholder": "Project Value"
+                            }
+                        },
+                        "stat_value": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Stat Value",
+                                "placeholder": "$2.5M"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SEO": {
+            "meta_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Title"
+                }
+            },
+            "meta_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Description"
+                }
+            },
+            "meta_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Social Share Image"
+                }
+            }
+        }
+    }
+}

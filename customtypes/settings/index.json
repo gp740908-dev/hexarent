@@ -1,0 +1,226 @@
+{
+    "id": "settings",
+    "label": "Site Settings",
+    "format": "custom",
+    "repeatable": false,
+    "status": true,
+    "json": {
+        "General": {
+            "site_name": {
+                "type": "Text",
+                "config": {
+                    "label": "Site Name",
+                    "placeholder": "HEXA Rent"
+                }
+            },
+            "site_tagline": {
+                "type": "Text",
+                "config": {
+                    "label": "Site Tagline",
+                    "placeholder": "Heavy Equipment Rental"
+                }
+            },
+            "logo_dark": {
+                "type": "Image",
+                "config": {
+                    "label": "Logo (Dark Background)"
+                }
+            },
+            "logo_light": {
+                "type": "Image",
+                "config": {
+                    "label": "Logo (Light Background)"
+                }
+            },
+            "favicon": {
+                "type": "Image",
+                "config": {
+                    "label": "Favicon"
+                }
+            }
+        },
+        "Contact": {
+            "contact_phone": {
+                "type": "Text",
+                "config": {
+                    "label": "Main Phone",
+                    "placeholder": "+1 (234) 567-890"
+                }
+            },
+            "emergency_hotline": {
+                "type": "Text",
+                "config": {
+                    "label": "24/7 Emergency Hotline",
+                    "placeholder": "+1 (234) 567-899"
+                }
+            },
+            "contact_email": {
+                "type": "Text",
+                "config": {
+                    "label": "Email Address",
+                    "placeholder": "info@hexarent.com"
+                }
+            },
+            "whatsapp_number": {
+                "type": "Text",
+                "config": {
+                    "label": "WhatsApp Number",
+                    "placeholder": "+1234567890"
+                }
+            },
+            "office_address": {
+                "type": "RichText",
+                "config": {
+                    "label": "Office Address",
+                    "multi": "paragraph"
+                }
+            }
+        },
+        "Social Media": {
+            "social_links": {
+                "type": "Group",
+                "config": {
+                    "label": "Social Links",
+                    "fields": {
+                        "platform": {
+                            "type": "Select",
+                            "config": {
+                                "label": "Platform",
+                                "options": [
+                                    "Facebook",
+                                    "Instagram",
+                                    "Twitter",
+                                    "LinkedIn",
+                                    "YouTube",
+                                    "TikTok"
+                                ]
+                            }
+                        },
+                        "url": {
+                            "type": "Link",
+                            "config": {
+                                "label": "URL",
+                                "allowTargetBlank": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Business Hours": {
+            "business_hours": {
+                "type": "Group",
+                "config": {
+                    "label": "Business Hours",
+                    "fields": {
+                        "days": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Days",
+                                "placeholder": "Monday - Friday"
+                            }
+                        },
+                        "hours": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Hours",
+                                "placeholder": "7:00 AM - 6:00 PM"
+                            }
+                        }
+                    }
+                }
+            },
+            "emergency_note": {
+                "type": "Text",
+                "config": {
+                    "label": "Emergency Support Note",
+                    "placeholder": "24/7 Emergency Support Available"
+                }
+            }
+        },
+        "Navigation": {
+            "main_navigation": {
+                "type": "Group",
+                "config": {
+                    "label": "Main Navigation",
+                    "fields": {
+                        "label": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Link Label",
+                                "placeholder": "Equipment"
+                            }
+                        },
+                        "link": {
+                            "type": "Link",
+                            "config": {
+                                "label": "Link URL"
+                            }
+                        },
+                        "has_dropdown": {
+                            "type": "Boolean",
+                            "config": {
+                                "label": "Has Dropdown",
+                                "default_value": false
+                            }
+                        }
+                    }
+                }
+            },
+            "footer_links": {
+                "type": "Group",
+                "config": {
+                    "label": "Footer Links",
+                    "fields": {
+                        "column_title": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Column Title"
+                            }
+                        },
+                        "links": {
+                            "type": "Group",
+                            "config": {
+                                "label": "Links",
+                                "fields": {
+                                    "label": {
+                                        "type": "Text",
+                                        "config": {
+                                            "label": "Link Label"
+                                        }
+                                    },
+                                    "url": {
+                                        "type": "Link",
+                                        "config": {
+                                            "label": "URL"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SEO Defaults": {
+            "default_meta_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Default Meta Title"
+                }
+            },
+            "default_meta_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Default Meta Description"
+                }
+            },
+            "default_og_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Default Social Share Image"
+                }
+            }
+        }
+    }
+}

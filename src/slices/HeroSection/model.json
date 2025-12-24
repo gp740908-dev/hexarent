@@ -1,0 +1,115 @@
+{
+    "id": "hero_section",
+    "type": "SharedSlice",
+    "name": "HeroSection",
+    "description": "Hero section with headline, description, and CTAs",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "initial",
+            "description": "Default hero section",
+            "primary": {
+                "headline": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Headline",
+                        "placeholder": "Your powerful headline here"
+                    }
+                },
+                "subheadline": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Subheadline",
+                        "placeholder": "Supporting text"
+                    }
+                },
+                "description": {
+                    "type": "RichText",
+                    "config": {
+                        "label": "Description",
+                        "single": "paragraph,strong,em"
+                    }
+                },
+                "background_image": {
+                    "type": "Image",
+                    "config": {
+                        "label": "Background Image"
+                    }
+                },
+                "primary_cta_text": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Primary CTA Text"
+                    }
+                },
+                "primary_cta_link": {
+                    "type": "Link",
+                    "config": {
+                        "label": "Primary CTA Link"
+                    }
+                },
+                "secondary_cta_text": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Secondary CTA Text"
+                    }
+                },
+                "secondary_cta_link": {
+                    "type": "Link",
+                    "config": {
+                        "label": "Secondary CTA Link"
+                    }
+                }
+            },
+            "items": {}
+        },
+        {
+            "id": "withVideo",
+            "name": "With Video",
+            "docURL": "...",
+            "version": "initial",
+            "description": "Hero section with video background",
+            "primary": {
+                "headline": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Headline"
+                    }
+                },
+                "subheadline": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Subheadline"
+                    }
+                },
+                "video_url": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Video URL (MP4)"
+                    }
+                },
+                "fallback_image": {
+                    "type": "Image",
+                    "config": {
+                        "label": "Fallback Image"
+                    }
+                },
+                "primary_cta_text": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Primary CTA Text"
+                    }
+                },
+                "primary_cta_link": {
+                    "type": "Link",
+                    "config": {
+                        "label": "Primary CTA Link"
+                    }
+                }
+            },
+            "items": {}
+        }
+    ]
+}

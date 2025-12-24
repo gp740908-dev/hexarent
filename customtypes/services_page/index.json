@@ -1,0 +1,175 @@
+{
+    "id": "services_page",
+    "label": "Services Page",
+    "format": "page",
+    "repeatable": false,
+    "status": true,
+    "json": {
+        "Hero": {
+            "page_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Page Title",
+                    "placeholder": "Our Services"
+                }
+            },
+            "page_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Page Description"
+                }
+            },
+            "hero_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Hero Image"
+                }
+            }
+        },
+        "Services": {
+            "services": {
+                "type": "Group",
+                "config": {
+                    "label": "Services",
+                    "fields": {
+                        "service_name": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Service Name",
+                                "placeholder": "Equipment Rental"
+                            }
+                        },
+                        "service_slug": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Service Slug (for anchor link)",
+                                "placeholder": "equipment-rental"
+                            }
+                        },
+                        "service_icon": {
+                            "type": "Image",
+                            "config": {
+                                "label": "Service Icon"
+                            }
+                        },
+                        "short_description": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Short Description"
+                            }
+                        },
+                        "full_description": {
+                            "type": "RichText",
+                            "config": {
+                                "label": "Full Description",
+                                "multi": "paragraph,heading3,strong,em,list-item"
+                            }
+                        },
+                        "features": {
+                            "type": "Group",
+                            "config": {
+                                "label": "Features",
+                                "fields": {
+                                    "feature": {
+                                        "type": "Text",
+                                        "config": {
+                                            "label": "Feature"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "pricing_info": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Pricing Info",
+                                "placeholder": "Starting from $200/day"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Why Choose Us": {
+            "why_choose_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Section Title",
+                    "placeholder": "Why Choose HEXA Rent"
+                }
+            },
+            "reasons": {
+                "type": "Group",
+                "config": {
+                    "label": "Reasons",
+                    "fields": {
+                        "icon": {
+                            "type": "Image",
+                            "config": {
+                                "label": "Icon"
+                            }
+                        },
+                        "title": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Title"
+                            }
+                        },
+                        "description": {
+                            "type": "Text",
+                            "config": {
+                                "label": "Description"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "CTA": {
+            "cta_title": {
+                "type": "Text",
+                "config": {
+                    "label": "CTA Title"
+                }
+            },
+            "cta_description": {
+                "type": "Text",
+                "config": {
+                    "label": "CTA Description"
+                }
+            },
+            "cta_button_text": {
+                "type": "Text",
+                "config": {
+                    "label": "CTA Button Text"
+                }
+            },
+            "cta_button_link": {
+                "type": "Link",
+                "config": {
+                    "label": "CTA Button Link"
+                }
+            }
+        },
+        "SEO": {
+            "meta_title": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Title"
+                }
+            },
+            "meta_description": {
+                "type": "Text",
+                "config": {
+                    "label": "Meta Description"
+                }
+            },
+            "meta_image": {
+                "type": "Image",
+                "config": {
+                    "label": "Social Share Image"
+                }
+            }
+        }
+    }
+}
